@@ -1,0 +1,107 @@
+/* #FONT */
+@font-face {
+    font-family: Inter;
+    src: url(srcs/font/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/* #RESET */
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+/* #MAIN */
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: linear-gradient(116.71deg, #43ACCD 0.5%, rgba(0, 150, 199, 0) 112.05%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ /* #REUTILISAVEIS */
+.container{
+    width: 45vw;
+    position: relative;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 23px 23px 2px rgba(0, 0, 0, 0.25);
+    
+}
+.container:nth-child(2){
+    margin-top: 40px;
+}
+/* #NEW TASK */
+#newtask {
+    background-color: white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#newtask input{
+    position: relative;
+    width: 75%;
+    border: solid 4px #43ACCD;
+    border-radius: 10px;
+    padding: 20px ;
+    outline: none;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    transition: border 0.5s ease-out ;
+}
+#newtask input:focus{
+    border: solid 4px #237892;
+}
+#newtask button{
+    position: relative;
+    background-color: #43ACCD;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    width: 20%;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 500;
+    transition: background 0.8s ease-out ;
+}
+#newtask button:hover{
+    background-color: #237892;
+}
+
+/* #TASKS */
+#tasks{
+    position: relative;
+}
+
+.task {
+    height: 50px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid rgba(67, 172, 205, 0.5);;
+    color: rgba(0, 0, 0, 0.8);
+}
+#taskname{
+    cursor: pointer;
+}
+.task button{
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.completed{
+    text-decoration: line-through;
+}
